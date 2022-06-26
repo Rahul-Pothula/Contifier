@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- the menu starts here -->
+    <div class="navbar">
+      <label for="togglericon" class="toggler" checked></label>
+      <input type="checkbox" id="togglericon" class="toggler" />
+
+      <div class="brand">
+        <span class="brand-icon">⚛</span>
+        <span class="brand-name">CONTIFIER</span>
+      </div>
+
+      <div class="nav">
+        <!-- reposition the menu with: -->
+        <!-- div class="nav at-center" -->
+        <!-- div class="nav at-right"  -->
+
+        <a class = "homeNav" href="#top">Home</a>
+        <a class = "homeNav" href="#about">About</a>
+
+        <div class="dropdown">
+          <label class="naughty-dash" for="toggle-1">Sort</label>
+          <input class="naughty-dash" type="checkbox" id="toggle-1" />
+          <ul class="naughty-dash">
+            <li class="naughty-dash">
+              <a class = "navBarLinks" href="/sorted.html" target="_blank"
+                >Contests starting early first
+              </a>
+            </li>
+            <li class="naughty-dash">
+              <a class = "navBarLinks" href="/reverseSorted.html" target="_blank"
+                >Contests starting late first</a
+              >
+            </li>
+
+            <!-- <li><a href="#">History Telling</a></li> -->
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <label for="toggle-2">Social</label>
+          <input type="checkbox" id="toggle-2" />
+          <ul class="naughty-dash">
+            <li class="naughty-dash"><a class = "navBarLinks"  href="https://www.facebook.com/prahul.pothula/">Facebook</a></li>
+            <li class="naughty-dash"><a class = "navBarLinks"  href="https://twitter.com/explore">Twitter</a></li>
+            <li class="naughty-dash"><a class = "navBarLinks"  href="https://www.instagram.com/amateur_undergraduate/?hl=en">Instagram</a></li>
+          </ul>
+        </div>
+        <a class="naughty-link2" href="http://localhost:3000/">Sign Up</a>
+      </div>
+
+      <!--light mode dark mode button starts here-->
+      <div class="container">
+        <label for="checkbox" class="theme-toggler">
+          <input type="checkbox" name="" id="checkbox" onchange="func()"/>
+          <div class="toggle">
+            <svg
+              id="graphic"
+              viewBox="0 0 132.29 132.29"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="sung">
+                <path
+                  id="sun"
+                  d="m99.722 66.146a33.576 33.576 0 0 1-33.576 33.576 33.576 33.576 0 0 1-33.576-33.576 33.576 33.576 0 0 1 33.576-33.576 33.576 33.576 0 0 1 33.576 33.576"
+                />
+                <g
+                  id="sunshine"
+                  transform="matrix(.92602 0 0 .92602 -10.774 -58.541)"
+                >
+                  <path
+                    transform="matrix(0 .58145 -.59067 0 145.26 159.26)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(-.41115 .41115 -.41766 -.41766 109.64 196.03)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(-.58145 0 0 -.59067 58.451 196.84)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(-.41115 -.41115 .41766 -.41766 21.685 161.22)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(0 -.58145 .59067 0 20.875 110.03)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(.41115 -.41115 .41766 .41766 56.495 73.269)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(.58145 0 0 .59067 107.68 72.459)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                  <path
+                    transform="matrix(.41115 .41115 -.41766 .41766 144.45 108.08)"
+                    d="m-19.4 32.282h-45.867l22.934-39.722z"
+                  />
+                </g>
+              </g>
+              <path
+                id="croissant"
+                d="m55.461 34.281a33.587 33.587 0 0 0-22.874 31.832 33.587 33.587 0 0 0 33.587 33.587 33.587 33.587 0 0 0 30.441-19.395 31.187 31.187 0 0 1-17.268 5.2174 31.187 31.187 0 0 1-31.187-31.187 31.187 31.187 0 0 1 7.3022-20.053z"
+              />
+            </svg>
+          </div>
+        </label>
+      </div>
+      <!--light mode dark mode button ends here-->
+    </div>
+    <br /><br /><br />
+    <!-- the menu ends here -->
+    <div class="content">
+      <div id="mainContent">
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/leetcode_icon.png"
+                  alt=""
+                  srcset=""
+                /><a
+                  class="mainLink"
+                  href="https://leetcode.com/accounts/login/?next=/profile/account/ "
+                  >LeetCode</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="leetCodeBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/codeforces_icon.png"
+                  alt=""
+                  srcset=""
+                /><a
+                  class="mainLink"
+                  href="https://codeforces.com/profile/login"
+                  >CodeForces
+                </a>
+              </p>
+            </div>
+          </div>
+          <div id="codeForcesBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/codechef_icon.png"
+                  alt=""
+                  srcset=""
+                /><a class="mainLink" href="https://www.codechef.com/login"
+                  >CodeChef</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="codeChefBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/topcoder_icon.png"
+                  alt=""
+                  srcset=""
+                /><a class="mainLink" href="https://www.topcoder.com/"
+                  >TopCoder</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="topCoderBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/atcoder_icon.png"
+                  alt=""
+                  srcset=""
+                /><a class="mainLink" href="https://atcoder.jp/login"
+                  >AtCoder</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div id="atCoderBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/hackerrank_icon.png"
+                  alt=""
+                  srcset=""
+                /><a class="mainLink" href="https://www.hackerrank.com/"
+                  >Hackerrank</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="hackerRankBox"></div>
+        </div>
+        <div class="boxes">
+          <div class="inHeading">
+            <div class="headingText">
+              <p class="">
+                <img
+                  class="web_icon"
+                  src="/images/hackerearth_icon.png"
+                  alt=""
+                  srcset=""
+                /><a class="mainLink" href="https://www.hackerearth.com/login/"
+                  >HackerEarth</a
+                >
+              </p>
+            </div>
+          </div>
+          <div id="hackerEarthBox"></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Footer code starts here -->
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        
+        <li class="menu__item"><a class="menu__link" href="https://mail.google.com/">Contact</a></li>
+      </ul>
+      <p>&copy;2022 Contifier | All Rights Reserved</p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Footer code ends here -->
+    <script src="script.js" defer></script>
+    <script src="liteDark.js"></script>
+  </body>
+</html>
